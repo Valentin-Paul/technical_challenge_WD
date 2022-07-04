@@ -1,0 +1,28 @@
+{
+  "name": "technical_challenge_wd",
+  "version": "1.0.0",
+  "description": "At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.",
+  "main": "app.js",
+  "bin": {
+    "technical_challenge_wd": "bin/seeds.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valentin-Paul/technical_challenge_WD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valentin-Paul/technical_challenge_WD/issues"
+  },
+  "homepage": "https://github.com/Valentin-Paul/technical_challenge_WD#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2",
+    "nodemon": "^2.0.18"
+  }
+}
