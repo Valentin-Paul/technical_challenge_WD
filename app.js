@@ -1,10 +1,16 @@
 const express = require('express')
-
 const mongoose = require('mongoose')
 const Phones = require('./models/Phones.Model')
-
 const app = express();
-app.listen(3000, () => console.log("Server is running"));
+const cors = require('cors')
+
+
+app
+.use(cors({
+    credentials: true,
+    origin: process.env.ORIGIN || "http://localhost:3001",
+  }))
+.listen(3000, () => console.log("Server is running"));
 
 mongoose
   .connect('mongodb://localhost:27017/technical-challenge')
@@ -25,3 +31,8 @@ app.get("/phones/:phoneId", (req,res,next)=>{
 })
 
 module.exports = app;
+
+
+
+
+
