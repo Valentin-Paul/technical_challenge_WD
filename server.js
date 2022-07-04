@@ -1,4 +1,5 @@
 const app = require('./app')
+var cors = require('cors');
 
 const PORT = process.env.PORT || 5005;
 
