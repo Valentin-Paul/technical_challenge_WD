@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Scheman = mongoose.Schema
+const Schema = mongoose.Schema
 
 const phoneSchema = new Schema({
     id:{
